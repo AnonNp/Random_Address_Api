@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Address Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Random Address Generator</h1>
+        <p class="description">Generate a random address from any country with ease.</p>
+
+        <div class="instructions">
+            <p>To generate a random address, visit this link:</p>
+            <p><strong>Example:</strong> 
+                <span class="url">
+                    http://127.0.0.1:5000/random-address?country=<input type="text" id="country-code" name="country" placeholder="e.g., us" required>
+                    <button id="generate-btn" class="button">Generate Address</button>
+                </span>
+            </p>
+        </div>
+        
+        <div class="contact">
+            <p>Owner: 
+                <a href="https://t.me/xx_Anon_xx" target="_blank" class="telegram-link">
+                    <img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/6.4.0/telegram.svg" alt="Telegram Logo" class="telegram-logo"> 
+                    @xx_Anon_xx
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('generate-btn').addEventListener('click', function() {
+            var countryCode = document.getElementById('country-code').value;
+            if(countryCode) {
+                var url = 'http://127.0.0.1:5000/random-address?country=' + countryCode;
+                window.location.href = url;
+            }
+        });
+    </script>
+</body>
+</html>

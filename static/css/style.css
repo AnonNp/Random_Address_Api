@@ -1,0 +1,109 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e0f7fa; /* Light teal background for a refreshing look */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #ffffff; /* White background for the content container */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.instructions {
+    margin-bottom: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #fff;
+    background-image: linear-gradient(135deg, #6a11cb, #2575fc);
+    border: none;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    transform: translateY(-3px);
+    background-color: #00aaff;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 170, 255, 0.5);
+}
+
+.contact {
+    margin-top: 30px;
+}
+
+.telegram-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #0088cc;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.telegram-link:hover {
+    color: #006699;
+}
+
+.telegram-logo {
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    transition: transform 0.3s ease;
+}
+
+.telegram-logo:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .description {
+        font-size: 1rem;
+    }
+
+    .button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .telegram-link {
+        font-size: 1rem;
+    }
+}
