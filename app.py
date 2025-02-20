@@ -9,7 +9,7 @@ def index():
 
 @app.route('/random-address', methods=['GET'])
 def random_address():
-    country_code = request.args.get('country', 'us')  # Default to 'us' if no country provided
+    country_code = request.args.get('country', 'us')
 
     # Fetch data from randomuser.me API
     url = f"https://randomuser.me/api/?nat={country_code}"
